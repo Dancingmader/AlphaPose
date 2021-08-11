@@ -128,6 +128,8 @@ def check_input():
         inputlist = args.inputlist
         inputimg = args.inputimg
 
+	global im_names
+
         if len(inputlist):
             im_names = open(inputlist, 'r').readlines()
         elif len(inputpath) and inputpath != '/':
