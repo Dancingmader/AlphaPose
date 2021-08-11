@@ -101,6 +101,7 @@ if not args.sp:
 
 
 def check_input():
+    global im_names
     # for wecam
     if args.webcam != -1:
         args.detbatch = 1
@@ -127,7 +128,7 @@ def check_input():
         inputpath = args.inputpath
         inputlist = args.inputlist
         inputimg = args.inputimg
-        global im_names
+
         if len(inputlist):
             im_names = open(inputlist, 'r').readlines()
         elif len(inputpath) and inputpath != '/':
