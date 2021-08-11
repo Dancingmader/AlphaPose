@@ -102,6 +102,7 @@ if not args.sp:
 
 def check_input():
     global im_names
+    im_names = 1
     # for wecam
     if args.webcam != -1:
         args.detbatch = 1
